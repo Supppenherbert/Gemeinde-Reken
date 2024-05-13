@@ -1,0 +1,234 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Arial, sans-serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe der Navigationsleiste mit Transparenz */
+    z-index: 999; /* Stellen Sie sicher, dass die Navigationsleiste über dem Bild liegt */
+    padding: 10px 20px; /* Abstand oben und unten erhöhen, um das Logo und die Links zu zentrieren */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    margin-right: auto; /* Logo nach rechts schieben */
+}
+
+.logo img {
+    width: 100px; /* Größe des Logos anpassen */
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('Bilder/Main_Page/Mühle_rechts_reke.jpeg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1,
+.hero-content p {
+    margin: 0;
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+
+    font-family: Arial;
+    border-radius: 10px;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #EEF0EB;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    border-radius: 10px;
+}
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #153243;
+    border-radius: 10px;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EEF0EB;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 10px;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #F4F9E9;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 10px;
+  }
+
+
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-image: url('Bilder/Logos/final_gemeindereken_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+ 
+    margin-top: 65px;
+    margin-left: 100px;
+    opacity: 1;
+    transition: opacity 0.3s, transform 0.3s; /* Übergang für Deckkraft und Vergrößerung hinzugefügt */
+    transform: scale(1); /* Standardmäßig keine Vergrößerung */
+}
+
+.overlay:hover {
+    opacity: 1;
+    transform: scale(1.1); /* Vergrößerung um 20% */
+}
+
+
+.Impressum {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 70%;
+  background-image: url('Bilder/Main_Page/Impressum.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 385px;
+  margin-left: 570px;
+
+  opacity: 1;
+  transition: opacity 0.3s, transform 0.3s; /* Übergang für Deckkraft und Vergrößerung hinzugefügt */
+  transform: scale(1); /* Standardmäßig keine Vergrößerung */
+}
+
+.Impressum:hover {
+  opacity: 1;
+  transform: scale(1.1); /* Vergrößerung um 20% */
+}
